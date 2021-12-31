@@ -21,6 +21,7 @@ public class CategoryService {
         this.categoryRepository = categoryRepository;
     }
 
+    
     @Transactional(readOnly = true)
     public List<CategoryDTO> findAll() {
         List<Category> categories = categoryRepository.findAll();
